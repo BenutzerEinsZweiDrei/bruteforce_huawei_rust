@@ -65,7 +65,7 @@ fn main() {
 			
 
             for i in 1..=9000000000000000u64 {
-				let cmd = format!("getvar {:0>16}", i);
+				let cmd = format!("oem unlock {:0>16}", i);
                 match send_command(&mut device, &cmd) {
                     Ok(response) => {
                         if response.starts_with("FAIL") {

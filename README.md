@@ -3,4 +3,4 @@ bruteforcing oem unlock in rust
 
 use 'cargo run'
 
-this process takes 300 tousand years.
+https://brute.jtw.sh/#rate=66.66666666666667&length=16

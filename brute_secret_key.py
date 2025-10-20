@@ -1,3 +1,4 @@
+# "So, approximately 255 computers would be required to try all possible 10-character secret keys in 12 hours."
 import hashlib
 import itertools
 import multiprocessing
@@ -46,3 +47,4 @@ if __name__ == "__main__":
             print(f"Secret key found for example {i + 1}: {result}")
         else:
             print(f"Secret key not found for example {i + 1}")
+

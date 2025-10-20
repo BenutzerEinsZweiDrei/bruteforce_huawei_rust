@@ -111,10 +111,10 @@ fn print_separator() {
 #[tokio::main]
 async fn main() -> Result<()> {
     let args: Vec<String> = std::env::args().collect();
-    let default_imei = "863541030593965".to_string();
+    let default_imei = "--".to_string();
     let imei = args.get(1).map(|s| s.as_str()).unwrap_or(default_imei.as_str());
-    let sn = "FUH7N16B16009379";
-    let pid = "35047105";
+    let sn = "--";
+    let pid = "--";
     let max_keys: usize = args.get(2)
         .and_then(|s| s.parse().ok())
         .unwrap_or(100_000);
